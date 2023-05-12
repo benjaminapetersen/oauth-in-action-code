@@ -48,8 +48,9 @@
 		  <% if (client.logo_uri) { %>
 		  <p><b>logo:</b> <img src="<%- client.logo_uri %>" /></p>
 		  <% } %>
-		  
+
 		   <form class="form" action="/approve" method="POST">
+			   <p>reqid: <%- reqid %></p>
 			   <input type="hidden" name="reqid" value="<%- reqid %>">
 			   <% if (scope) { %>
 			   <p>The client is requesting access to the following:</p>
@@ -66,8 +67,8 @@
 
     </div><!-- /.container -->
 
-	
-	
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

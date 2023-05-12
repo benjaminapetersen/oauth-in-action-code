@@ -1,14 +1,21 @@
 {
   "dependencies": {
+    "body-parser": "^1.13.2",
+    "consolidate": "^0.13.1",
+    "cors": "^2.7.1",
     "express": "^4.13.1",
-	"sync-request": "^2.0.1",
-	"body-parser": "^1.13.2",
-	"underscore": "^1.8.3",
-	"underscore.string": "^3.1.1",
-	"consolidate": "^0.13.1",
-	"qs": "^6.9.3",
-	"randomstring": "^1.0.7",
-	"nosql": "^6.1.0",
-	"cors": "^2.7.1"
+    "nodemon": "^2.0.20",
+    "nosql": "^6.1.0",
+    "qs": "^6.9.3",
+    "randomstring": "^1.0.7",
+    "sync-request": "^2.0.1",
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.1.1"
+  },
+  "scripts": {
+    "description": "echo 'npm run client|server|resource in 3 different tabs'",
+    "client": "nodemon client.js",
+    "server": "nodemon authorizationServer.js",
+    "resource": "nodemon protectedResource.js"
   }
 }
